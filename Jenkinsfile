@@ -6,7 +6,7 @@ pipeline {
       {
        stage('build')
        {
-         git 'https://github.com/princy1612/jenkinsfile.sh'
+         /*git 'https://github.com/princy1612/jenkinsfile.sh*/
       steps
         {
         echo "buliding the application .."
