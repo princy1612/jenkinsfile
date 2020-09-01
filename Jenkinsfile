@@ -4,24 +4,24 @@ pipeline {
  agent any
      stages
       {
-       stage('build')
+       stages('build')
        {
          git 'https://github.com/princy1612/jenkinsfile.sh'
-      step
+      steps
         {
         echo "buliding the application .."
     }
     }
-        stage('Testing')
+        stages('Testing')
        {
-      step
+      steps
          {
     echo " testing the application ..."
    }
    }
-        stage('Deploy')
+        stages('Deploy')
      {
-   step
+   steps
    {
       echo "deplying the application .."
     }
